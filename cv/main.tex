@@ -1,0 +1,272 @@
+%-------------------------
+% CV - Yanyu Li
+% LaTeX Template (clean, single-column academic CV)
+% Compiles with pdflatex or xelatex
+%-------------------------
+
+\documentclass[11pt,letterpaper]{article}
+
+% ---------- Packages ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.85in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{tabularx}
+\usepackage{etaremune}  % reverse-numbered lists
+
+% ---------- Colors ----------
+\definecolor{linkblue}{HTML}{2B6CB0}
+\definecolor{headblue}{HTML}{1A365D}
+\definecolor{lightgray}{HTML}{6B7280}
+
+% ---------- Hyperref setup ----------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkblue,
+    urlcolor=linkblue,
+    pdfauthor={Yanyu Li},
+    pdftitle={CV - Yanyu Li},
+}
+
+% ---------- Section formatting ----------
+\titleformat{\section}{
+    \vspace{-6pt}\Large\bfseries\color{headblue}\scshape
+}{}{0em}{}[\vspace{-6pt}\color{headblue}\titlerule\vspace{-4pt}]
+
+\titleformat{\subsection}{
+    \vspace{-2pt}\large\bfseries\color{headblue}
+}{}{0em}{}[\vspace{-4pt}]
+
+% ---------- List settings ----------
+\setlist[itemize]{leftmargin=*, nosep, topsep=2pt}
+\setlist[enumerate]{leftmargin=*, nosep, topsep=2pt}
+
+% ---------- Header / Footer ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\color{lightgray} Yanyu Li \textbar\ Curriculum Vitae \textbar\ Page \thepage\ of \pageref{LastPage}}
+
+% ---------- Custom commands ----------
+\newcommand{\cventry}[4]{%
+    \noindent\textbf{#1} \hfill \textit{#2} \\
+    \textit{#3} \hfill #4 \\[4pt]
+}
+
+\newcommand{\pub}[4]{%
+    \item #1. \textit{#2}. #3, #4.
+}
+
+\newcommand{\pubBold}[5]{%
+    \item #1. \textit{#2}. #3, #4. \textbf{#5}
+}
+
+% =============================================
+\begin{document}
+
+% ---------- Title / Header ----------
+\begin{center}
+    {\Huge\bfseries\color{headblue} Yanyu Li} \\[8pt]
+    {\large Ph.D., Northeastern University} \\[6pt]
+    \href{mailto:yanyu.li@northeastern.edu}{yanyu.li@northeastern.edu} \quad\textbar\quad
+    \href{https://scholar.google.com/citations?user=XUj8koUAAAAJ&hl=en}{Google Scholar} \quad\textbar\quad
+    % \href{https://github.com/YOUR_USERNAME}{GitHub} \quad\textbar\quad
+    % \href{https://linkedin.com/in/YOUR_USERNAME}{LinkedIn} \quad\textbar\quad
+    % \href{https://your-website.github.io}{Website}
+\end{center}
+
+\vspace{-4pt}
+
+% ---------- Research Interests ----------
+\section{Research Interests}
+
+Efficient deep learning, vision transformers, diffusion models (text-to-image, video generation), 
+neural architecture search, model compression (pruning, quantization), on-device / mobile AI deployment.
+
+% ---------- Education ----------
+\section{Education}
+
+\cventry{Northeastern University}{Boston, MA}{Ph.D.}{2024}
+% Advisor: Prof.\ XXX \\
+% Dissertation: \textit{Accelerating Large Scale Generative AI: A Comprehensive Study}
+
+% Add more education entries as needed:
+% \cventry{University Name}{Location}{M.S. / B.S. in XXX}{Year}
+
+% ---------- Experience ----------
+\section{Experience}
+
+% Uncomment and fill in your experience:
+% \cventry{Company / Lab Name}{Location}{Title / Role}{Start -- End}
+% Brief description of responsibilities and achievements.
+
+\textit{Please update with your professional experience.}
+
+% ---------- Selected Publications ----------
+% Total: 59 publications | 2,800+ citations | h-index: 23
+
+\section{Selected Publications}
+\small
+\textit{Full list: \href{https://scholar.google.com/citations?user=XUj8koUAAAAJ&hl=en}{Google Scholar} 
+\hfill $\dagger$ equal contribution}
+
+\vspace{4pt}
+\subsection*{Efficient Vision Transformers}
+
+\begin{etaremune}[start=5]
+
+\pub{\textbf{Y.\ Li}, G.\ Yuan, Y.\ Wen, J.\ Hu, G.\ Evangelidis, S.\ Tulyakov, Y.\ Wang, J.\ Ren}
+    {EfficientFormer: Vision Transformers at MobileNet Speed}
+    {NeurIPS}{2022}
+
+\pub{\textbf{Y.\ Li}, J.\ Hu, Y.\ Wen, G.\ Evangelidis, K.\ Salahi, Y.\ Wang, S.\ Tulyakov, J.\ Ren}
+    {Rethinking Vision Transformers for MobileNet Size and Speed}
+    {ICCV}{2023}
+
+\pub{\textbf{Y.\ Li}, P.\ Zhao, G.\ Yuan, X.\ Lin, Y.\ Wang, X.\ Chen}
+    {Pruning-as-Search: Efficient Neural Architecture Search via Channel Pruning and Structural Reparameterization}
+    {IJCAI}{2022}
+
+\pub{\textbf{Y.\ Li}, C.\ Yang, P.\ Zhao, G.\ Yuan, W.\ Niu, J.\ Guan, H.\ Tang, M.\ Qin, Q.\ Jin}
+    {Towards Real-Time Segmentation on the Edge}
+    {AAAI}{2023}
+
+\pub{G.\ Yuan, \textbf{Y.\ Li}, S.\ Li, Z.\ Kong, S.\ Tulyakov, X.\ Tang, Y.\ Wang, J.\ Ren}
+    {Layer Freezing \& Data Sieving: Missing Pieces of a Generic Framework for Sparse Training}
+    {NeurIPS}{2022}
+
+\end{etaremune}
+
+\subsection*{Diffusion Models \& Generative AI}
+
+\begin{etaremune}[start=9]
+
+\pub{\textbf{Y.\ Li}, H.\ Wang, Q.\ Jin, J.\ Hu, P.\ Chemerys, Y.\ Fu, Y.\ Wang, S.\ Tulyakov, J.\ Ren}
+    {SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds}
+    {NeurIPS}{2023}
+
+\pub{Y.\ Sui, \textbf{Y.\ Li}, A.\ Kag, Y.\ Idelbayev, J.\ Cao, J.\ Hu, D.\ Sagar, B.\ Yuan, S.\ Tulyakov}
+    {BitsFusion: 1.99 Bits Weight Quantization of Diffusion Model}
+    {NeurIPS}{2024}
+
+\pub{Z.\ Zhang, \textbf{Y.\ Li}, Y.\ Wu, A.\ Kag, I.\ Skorokhodov, W.\ Menapace, A.\ Siarohin}
+    {SF-V: Single Forward Video Generation Model}
+    {NeurIPS}{2024}
+
+\pub{\textbf{Y.\ Li}, X.\ Liu, A.\ Kag, J.\ Hu, Y.\ Idelbayev, D.\ Sagar, Y.\ Wang, S.\ Tulyakov, J.\ Ren}
+    {TextCraftor: Your Text Encoder Can Be Image Quality Controller}
+    {CVPR}{2024}
+
+\pub{X.\ Liu, J.\ Ren, A.\ Siarohin, I.\ Skorokhodov, \textbf{Y.\ Li}, D.\ Lin, X.\ Liu, Z.\ Liu}
+    {HyperHuman: Hyper-Realistic Human Generation with Latent Structural Diffusion}
+    {ICLR}{2024}
+
+\pub{X.\ Shen, Z.\ Song, Y.\ Zhou, B.\ Chen, \textbf{Y.\ Li}, Y.\ Gong, K.\ Zhang, H.\ Tan, J.\ Kuen}
+    {LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers}
+    {AAAI}{2025}
+
+\pub{Y.\ Wu, Z.\ Zhang, \textbf{Y.\ Li}, Y.\ Xu, A.\ Kag, Y.\ Sui, H.\ Coskun, K.\ Ma, A.\ Lebedev}
+    {SnapGen-V: Generating a Five-Second Video within Five Seconds on a Mobile Device}
+    {CVPR}{2025}
+
+\pub{J.\ Chen, D.\ Hu, X.\ Huang, H.\ Coskun, A.\ Sahni, A.\ Gupta, A.\ Goyal, D.\ Lahiri}
+    {SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training}
+    {CVPR}{2025}
+
+\pub{I.\ Skorokhodov, S.\ Girish, B.\ Hu, W.\ Menapace, \textbf{Y.\ Li}, R.\ Abdal, S.\ Tulyakov}
+    {Improving the Diffusability of Autoencoders}
+    {arXiv preprint}{2025}
+
+\end{etaremune}
+
+\subsection*{Hardware-Aware Optimization \& Quantization}
+
+\begin{etaremune}[start=6]
+
+\pub{S.E.\ Chang, \textbf{Y.\ Li}, M.\ Sun, R.\ Shi, H.K.H.\ So, X.\ Qian, Y.\ Wang, X.\ Lin}
+    {Mix and Match: A Novel FPGA-Centric Deep Neural Network Quantization Framework}
+    {HPCA}{2021}
+
+\pub{M.\ Sun, Z.\ Li, A.\ Lu, \textbf{Y.\ Li}, S.E.\ Chang, X.\ Ma, X.\ Lin, Z.\ Fang}
+    {FILM-QNN: Efficient FPGA Acceleration of Deep Neural Networks with Intra-Layer, Mixed-Precision Quantization}
+    {FPGA}{2022}
+
+\pub{Z.\ Li, M.\ Sun, A.\ Lu, H.\ Ma, G.\ Yuan, Y.\ Xie, H.\ Tang, \textbf{Y.\ Li}, M.\ Leeser, Z.\ Wang}
+    {Auto-ViT-Acc: An FPGA-Aware Automatic Acceleration Framework for Vision Transformer with Mixed-Scheme Quantization}
+    {FPL}{2022}
+
+\pub{Z.\ Li, G.\ Yuan, W.\ Niu, P.\ Zhao, \textbf{Y.\ Li}, Y.\ Cai, X.\ Shen, Z.\ Zhan, Z.\ Kong, Q.\ Jin}
+    {NPAS: A Compiler-Aware Framework of Unified Network Pruning and Architecture Search for Beyond Real-Time Mobile Acceleration}
+    {CVPR}{2021}
+
+\pub{S.E.\ Chang, \textbf{Y.\ Li}, M.\ Sun, W.\ Jiang, S.\ Liu, Y.\ Wang, X.\ Lin}
+    {RMSMP: A Novel Deep Neural Network Quantization Framework with Row-Wise Mixed Schemes and Multiple Precisions}
+    {ICCV}{2021}
+
+\pub{G.\ Yang, Y.\ Xie, Z.J.\ Xue, S.E.\ Chang, \textbf{Y.\ Li}, P.\ Dong, J.\ Lei, W.\ Xie, Y.\ Wang}
+    {SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs}
+    {FPL}{2024}
+
+\end{etaremune}
+
+% ---------- Patents ----------
+\section{Patents}
+
+\begin{itemize}
+    \item \textit{EfficientFormer Vision Transformer}. US Patent 12,236,668, 2025.
+    \item \textit{Text-to-Image Diffusion Model Rearchitecture}. US Patent 12,469,273, 2025.
+    \item \textit{Vision Transformer for MobileNet Size and Speed}. US Patent App.\ 18/080,993, 2024.
+    \item \textit{Latent Diffusion Model Autodecoders}. US Patent App.\ 18/400,677, 2024.
+    \item \textit{Step Distillation for Latent Diffusion Models}. US Patent App.\ 18/434,411, 2024.
+    \item \textit{Automatic Image Generation Using Latent Structural Diffusion}. US Patent App.\ 18/429,251, 2025.
+    \item \textit{Layer Freezing \& Data Sieving for Sparse Training}. US Patent App.\ 17/893,241, 2024.
+\end{itemize}
+
+% ---------- Honors & Awards ----------
+\section{Honors \& Awards}
+
+\textit{Please update with your awards, fellowships, and honors.}
+
+% Examples:
+% \begin{itemize}
+%     \item Best Paper Award, Conference Name, Year
+%     \item Fellowship Name, Institution, Year
+% \end{itemize}
+
+% ---------- Professional Service ----------
+\section{Professional Service}
+
+\textit{Please update with your reviewing and service activities.}
+
+% Examples:
+% \textbf{Reviewer:} NeurIPS, CVPR, ICCV, ECCV, ICML, AAAI, IJCAI \\
+% \textbf{Program Committee:} ...
+
+% ---------- Skills ----------
+\section{Technical Skills}
+
+\begin{itemize}
+    \item \textbf{Languages \& Frameworks:} Python, PyTorch, TensorFlow, C/C++, CUDA
+    \item \textbf{Tools:} Git, Docker, \LaTeX, Linux
+    \item \textbf{Specialties:} Model compression, neural architecture search, mobile deployment, FPGA acceleration
+\end{itemize}
+
+% ---------- References ----------
+\section{References}
+
+Available upon request.
+
+\vfill
+
+\begin{center}
+    \small\color{lightgray}
+    Last updated: \today
+\end{center}
+
+\end{document}
