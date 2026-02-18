@@ -31,7 +31,7 @@
     linkcolor=linkblue,
     urlcolor=linkblue,
     pdfauthor={Yanyu Li},
-    pdftitle={CV - Yanyu Li},
+    pdftitle={CV -- Yanyu Li, Research Scientist, Snap Research},
 }
 
 % ---------- Section formatting ----------
@@ -73,12 +73,10 @@
 % ---------- Title / Header ----------
 \begin{center}
     {\Huge\bfseries\color{headblue} Yanyu Li} \\[8pt]
-    {\large Ph.D., Northeastern University} \\[6pt]
+    {\large Research Scientist, Snap Research} \\[4pt]
+    {\normalsize Ph.D., Northeastern University} \\[6pt]
     \href{mailto:yanyu.li@northeastern.edu}{yanyu.li@northeastern.edu} \quad\textbar\quad
-    \href{https://scholar.google.com/citations?user=XUj8koUAAAAJ&hl=en}{Google Scholar} \quad\textbar\quad
-    % \href{https://github.com/YOUR_USERNAME}{GitHub} \quad\textbar\quad
-    % \href{https://linkedin.com/in/YOUR_USERNAME}{LinkedIn} \quad\textbar\quad
-    % \href{https://your-website.github.io}{Website}
+    \href{https://scholar.google.com/citations?user=XUj8koUAAAAJ&hl=en}{Google Scholar}
 \end{center}
 
 \vspace{-4pt}
@@ -86,27 +84,47 @@
 % ---------- Research Interests ----------
 \section{Research Interests}
 
-Efficient deep learning, vision transformers, diffusion models (text-to-image, video generation), 
-neural architecture search, model compression (pruning, quantization), on-device / mobile AI deployment.
+Efficient deep learning, vision transformers, diffusion models (text-to-image \& video generation), 
+neural architecture search, model compression (pruning, quantization), on-device / mobile AI deployment, 
+FPGA acceleration.
 
 % ---------- Education ----------
 \section{Education}
 
-\cventry{Northeastern University}{Boston, MA}{Ph.D.}{2024}
-% Advisor: Prof.\ XXX \\
-% Dissertation: \textit{Accelerating Large Scale Generative AI: A Comprehensive Study}
+\cventry{Northeastern University}{Boston, MA}{Ph.D. in Electrical and Computer Engineering}{2024}
+Advisor: Prof.\ Yanzhi Wang \\
+Dissertation: \textit{Accelerating Large Scale Generative AI: A Comprehensive Study}
 
 % Add more education entries as needed:
-% \cventry{University Name}{Location}{M.S. / B.S. in XXX}{Year}
+% \cventry{University Name}{Location}{M.S. in XXX}{Year}
+% \cventry{University Name}{Location}{B.S. in XXX}{Year}
 
 % ---------- Experience ----------
 \section{Experience}
 
-% Uncomment and fill in your experience:
-% \cventry{Company / Lab Name}{Location}{Title / Role}{Start -- End}
-% Brief description of responsibilities and achievements.
+\cventry{Snap Inc.\ (Snap Research)}{Santa Monica, CA}{Research Scientist}{2024 -- Present}
+\begin{itemize}
+    \item Lead research on efficient generative AI models for on-device deployment, including text-to-image and video generation.
+    \item Developed SnapGen and SnapGen-V: state-of-the-art mobile-optimized generative models (CVPR 2025).
+    \item Pioneered ultra-low-bit quantization (BitsFusion) and single-step video generation (SF-V) techniques (NeurIPS 2024).
+    \item Co-invented multiple patent-pending technologies for efficient diffusion model architectures.
+\end{itemize}
 
-\textit{Please update with your professional experience.}
+\cventry{Snap Inc.\ (Snap Research)}{Santa Monica, CA}{Research Intern}{2022 -- 2023}
+\begin{itemize}
+    \item Designed EfficientFormer, the first vision transformer running at MobileNet speed on mobile devices (NeurIPS 2022; 730+ citations).
+    \item Developed SnapFusion, the first text-to-image diffusion model running on mobile devices within two seconds (NeurIPS 2023).
+    \item Proposed EfficientFormerV2 with unified fine-grained joint search for MobileNet-size vision transformers (ICCV 2023).
+    \item Contributed to TextCraftor for diffusion model quality control via text encoder fine-tuning (CVPR 2024).
+\end{itemize}
+
+\cventry{Northeastern University}{Boston, MA}{Research Assistant}{2019 -- 2024}
+\begin{itemize}
+    \item Conducted research on neural architecture search, model compression, and hardware-aware optimization under Prof.\ Yanzhi Wang.
+    \item Developed Pruning-as-Search framework unifying channel pruning and NAS via structural reparameterization (IJCAI 2022).
+    \item Designed real-time semantic segmentation models for edge devices (AAAI 2023).
+    \item Collaborated on FPGA-centric quantization frameworks for efficient DNN inference (HPCA 2021, FPL 2022).
+\end{itemize}
 
 % ---------- Selected Publications ----------
 % Total: 59 publications | 2,800+ citations | h-index: 23
@@ -231,22 +249,16 @@ neural architecture search, model compression (pruning, quantization), on-device
 % ---------- Honors & Awards ----------
 \section{Honors \& Awards}
 
-\textit{Please update with your awards, fellowships, and honors.}
-
-% Examples:
+% Add awards, fellowships, and honors as needed:
 % \begin{itemize}
-%     \item Best Paper Award, Conference Name, Year
-%     \item Fellowship Name, Institution, Year
+%     \item Award Name, Organization, Year
 % \end{itemize}
+\textit{To be updated.}
 
 % ---------- Professional Service ----------
 \section{Professional Service}
 
-\textit{Please update with your reviewing and service activities.}
-
-% Examples:
-% \textbf{Reviewer:} NeurIPS, CVPR, ICCV, ECCV, ICML, AAAI, IJCAI \\
-% \textbf{Program Committee:} ...
+\textbf{Conference Reviewer:} NeurIPS, CVPR, ICCV, ECCV, ICML, AAAI, ICLR
 
 % ---------- Skills ----------
 \section{Technical Skills}
