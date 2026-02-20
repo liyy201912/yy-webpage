@@ -18,7 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{tabularx}
-\usepackage{etaremune}  % reverse-numbered lists
+% etaremune removed; using enumerate with [resume] for continuous numbering
 
 % ---------- Colors ----------
 \definecolor{linkblue}{HTML}{2B6CB0}
@@ -31,7 +31,7 @@
     linkcolor=linkblue,
     urlcolor=linkblue,
     pdfauthor={Yanyu Li},
-    pdftitle={CV -- Yanyu Li, Research Scientist, Snap Research},
+    pdftitle={CV - Yanyu Li},
 }
 
 % ---------- Section formatting ----------
@@ -73,10 +73,12 @@
 % ---------- Title / Header ----------
 \begin{center}
     {\Huge\bfseries\color{headblue} Yanyu Li} \\[8pt]
-    {\large Research Scientist, Snap Research} \\[4pt]
-    {\normalsize Ph.D., Northeastern University} \\[6pt]
-    \href{mailto:yanyu.li@northeastern.edu}{yanyu.li@northeastern.edu} \quad\textbar\quad
-    \href{https://scholar.google.com/citations?user=XUj8koUAAAAJ&hl=en}{Google Scholar}
+    {\large Ph.D., Northeastern University} \\[6pt]
+    \href{mailto:li.yanyu@northeastern.edu}{li.yanyu@northeastern.edu} \quad\textbar\quad
+    +1\,(857)\,205-9835 \quad\textbar\quad
+    \href{https://scholar.google.com/citations?user=XUj8koUAAAAJ&hl=en}{Google Scholar} \quad\textbar\quad
+    \href{https://github.com/liyy201912}{GitHub} \quad\textbar\quad
+    \href{https://www.linkedin.com/in/yanyu-li-2216aa17b/}{LinkedIn}
 \end{center}
 
 \vspace{-4pt}
@@ -84,47 +86,37 @@
 % ---------- Research Interests ----------
 \section{Research Interests}
 
-Efficient deep learning, vision transformers, diffusion models (text-to-image \& video generation), 
-neural architecture search, model compression (pruning, quantization), on-device / mobile AI deployment, 
-FPGA acceleration.
+My research focuses primarily on the following areas:
+(i)~\textbf{Efficient AI}---neural network quantization, pruning, architecture search, distillation, and algorithm-hardware co-design; landing deep learning applications on edge devices.
+(ii)~\textbf{Computer Vision \& Generative Models}---generative models (diffusion for image and video generation), vision transformers, and on-device mobile AI deployment.
 
 % ---------- Education ----------
 \section{Education}
 
-\cventry{Northeastern University}{Boston, MA}{Ph.D. in Electrical and Computer Engineering}{2024}
-Advisor: Prof.\ Yanzhi Wang \\
-Dissertation: \textit{Accelerating Large Scale Generative AI: A Comprehensive Study}
+\cventry{Northeastern University}{Boston, MA}{Ph.D.\ in Computer Engineering}{Sep 2019 -- Aug 2024}
+Advisor: Prof.\ Yanzhi Wang
 
-% Add more education entries as needed:
-% \cventry{University Name}{Location}{M.S. in XXX}{Year}
-% \cventry{University Name}{Location}{B.S. in XXX}{Year}
+\cventry{Boston University}{Boston, MA}{M.S.\ in Mechanical Engineering (sub-concentration: Robotics)}{Sep 2017 -- Jan 2019}
+
+\cventry{Tsinghua University}{Beijing, China}{B.E.\ in Mechanical Engineering}{Aug 2011 -- Jul 2015}
 
 % ---------- Experience ----------
 \section{Experience}
 
-\cventry{Snap Inc.\ (Snap Research)}{Santa Monica, CA}{Research Scientist}{2024 -- Present}
-\begin{itemize}
-    \item Lead research on efficient generative AI models for on-device deployment, including text-to-image and video generation.
-    \item Developed SnapGen and SnapGen-V: state-of-the-art mobile-optimized generative models (CVPR 2025).
-    \item Pioneered ultra-low-bit quantization (BitsFusion) and single-step video generation (SF-V) techniques (NeurIPS 2024).
-    \item Co-invented multiple patent-pending technologies for efficient diffusion model architectures.
-\end{itemize}
+\cventry{Northeastern University}{Boston, MA}{Ph.D.\ Research Assistant}{Sep 2019 -- Present}
+Research on efficient AI techniques: deep neural network design, quantization, pruning, architecture search, and distillation. Vision models (CNNs and vision transformers) for image recognition, detection, and segmentation. Generative models (GAN and denoising diffusion) for image and video generation.
 
-\cventry{Snap Inc.\ (Snap Research)}{Santa Monica, CA}{Research Intern}{2022 -- 2023}
-\begin{itemize}
-    \item Designed EfficientFormer, the first vision transformer running at MobileNet speed on mobile devices (NeurIPS 2022; 730+ citations).
-    \item Developed SnapFusion, the first text-to-image diffusion model running on mobile devices within two seconds (NeurIPS 2023).
-    \item Proposed EfficientFormerV2 with unified fine-grained joint search for MobileNet-size vision transformers (ICCV 2023).
-    \item Contributed to TextCraftor for diffusion model quality control via text encoder fine-tuning (CVPR 2024).
-\end{itemize}
+\cventry{Snap Inc.}{Santa Monica, CA}{Research Intern (Part-time)}{Sep 2022 -- Present}
+Architecture optimization and step distillation of large-scale text-to-image Stable Diffusion, quality improvements for text models, and reward fine-tuning techniques. Democratizing content creation by bringing powerful and fast text-to-image diffusion models to a broader audience. Publications at NeurIPS 2023 and CVPR 2024; US patent filed.
 
-\cventry{Northeastern University}{Boston, MA}{Research Assistant}{2019 -- 2024}
-\begin{itemize}
-    \item Conducted research on neural architecture search, model compression, and hardware-aware optimization under Prof.\ Yanzhi Wang.
-    \item Developed Pruning-as-Search framework unifying channel pruning and NAS via structural reparameterization (IJCAI 2022).
-    \item Designed real-time semantic segmentation models for edge devices (AAAI 2023).
-    \item Collaborated on FPGA-centric quantization frameworks for efficient DNN inference (HPCA 2021, FPL 2022).
-\end{itemize}
+\cventry{Snap Inc.}{Santa Monica, CA}{Research Intern (Full-time)}{May 2022 -- Sep 2022}
+Efficient Vision Transformers for mobile deployment, enabling ultra-fast image recognition on mobile phones (1\,ms latency) with high accuracy. Publications at NeurIPS 2022 and ICCV 2023; US patent filed.
+
+\cventry{CoCoPIE LLC.}{Newton, MA}{Research Intern (Full-time)}{Jun 2021 -- Aug 2021}
+Algorithm-hardware co-design for deep neural network compression and deployment of quantized DNNs on mobile devices.
+
+\cventry{Kuaishou Technology US R\&D}{Palo Alto, CA}{Research Intern (Full-time)}{Sep 2020 -- Jan 2021}
+GAN compression and dynamic neural network pruning.
 
 % ---------- Selected Publications ----------
 % Total: 59 publications | 2,800+ citations | h-index: 23
@@ -137,37 +129,49 @@ Dissertation: \textit{Accelerating Large Scale Generative AI: A Comprehensive St
 \vspace{4pt}
 \subsection*{Efficient Vision Transformers}
 
-\begin{etaremune}[start=5]
-
-\pub{\textbf{Y.\ Li}, G.\ Yuan, Y.\ Wen, J.\ Hu, G.\ Evangelidis, S.\ Tulyakov, Y.\ Wang, J.\ Ren}
-    {EfficientFormer: Vision Transformers at MobileNet Speed}
-    {NeurIPS}{2022}
+\begin{enumerate}
 
 \pub{\textbf{Y.\ Li}, J.\ Hu, Y.\ Wen, G.\ Evangelidis, K.\ Salahi, Y.\ Wang, S.\ Tulyakov, J.\ Ren}
     {Rethinking Vision Transformers for MobileNet Size and Speed}
     {ICCV}{2023}
 
-\pub{\textbf{Y.\ Li}, P.\ Zhao, G.\ Yuan, X.\ Lin, Y.\ Wang, X.\ Chen}
-    {Pruning-as-Search: Efficient Neural Architecture Search via Channel Pruning and Structural Reparameterization}
-    {IJCAI}{2022}
-
 \pub{\textbf{Y.\ Li}, C.\ Yang, P.\ Zhao, G.\ Yuan, W.\ Niu, J.\ Guan, H.\ Tang, M.\ Qin, Q.\ Jin}
     {Towards Real-Time Segmentation on the Edge}
     {AAAI}{2023}
+
+\pub{\textbf{Y.\ Li}, G.\ Yuan, Y.\ Wen, J.\ Hu, G.\ Evangelidis, S.\ Tulyakov, Y.\ Wang, J.\ Ren}
+    {EfficientFormer: Vision Transformers at MobileNet Speed}
+    {NeurIPS}{2022}
 
 \pub{G.\ Yuan, \textbf{Y.\ Li}, S.\ Li, Z.\ Kong, S.\ Tulyakov, X.\ Tang, Y.\ Wang, J.\ Ren}
     {Layer Freezing \& Data Sieving: Missing Pieces of a Generic Framework for Sparse Training}
     {NeurIPS}{2022}
 
-\end{etaremune}
+\pub{\textbf{Y.\ Li}, P.\ Zhao, G.\ Yuan, X.\ Lin, Y.\ Wang, X.\ Chen}
+    {Pruning-as-Search: Efficient Neural Architecture Search via Channel Pruning and Structural Reparameterization}
+    {IJCAI}{2022}
+
+\end{enumerate}
 
 \subsection*{Diffusion Models \& Generative AI}
 
-\begin{etaremune}[start=9]
+\begin{enumerate}[resume]
 
-\pub{\textbf{Y.\ Li}, H.\ Wang, Q.\ Jin, J.\ Hu, P.\ Chemerys, Y.\ Fu, Y.\ Wang, S.\ Tulyakov, J.\ Ren}
-    {SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds}
-    {NeurIPS}{2023}
+\pub{I.\ Skorokhodov, S.\ Girish, B.\ Hu, W.\ Menapace, \textbf{Y.\ Li}, R.\ Abdal, S.\ Tulyakov}
+    {Improving the Diffusability of Autoencoders}
+    {arXiv preprint}{2025}
+
+\pub{Y.\ Wu, Z.\ Zhang, \textbf{Y.\ Li}, Y.\ Xu, A.\ Kag, Y.\ Sui, H.\ Coskun, K.\ Ma, A.\ Lebedev}
+    {SnapGen-V: Generating a Five-Second Video within Five Seconds on a Mobile Device}
+    {CVPR}{2025}
+
+\pub{J.\ Chen, D.\ Hu, X.\ Huang, H.\ Coskun, A.\ Sahni, A.\ Gupta, A.\ Goyal, D.\ Lahiri}
+    {SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training}
+    {CVPR}{2025}
+
+\pub{X.\ Shen, Z.\ Song, Y.\ Zhou, B.\ Chen, \textbf{Y.\ Li}, Y.\ Gong, K.\ Zhang, H.\ Tan, J.\ Kuen}
+    {LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers}
+    {AAAI}{2025}
 
 \pub{Y.\ Sui, \textbf{Y.\ Li}, A.\ Kag, Y.\ Idelbayev, J.\ Cao, J.\ Hu, D.\ Sagar, B.\ Yuan, S.\ Tulyakov}
     {BitsFusion: 1.99 Bits Weight Quantization of Diffusion Model}
@@ -185,39 +189,27 @@ Dissertation: \textit{Accelerating Large Scale Generative AI: A Comprehensive St
     {HyperHuman: Hyper-Realistic Human Generation with Latent Structural Diffusion}
     {ICLR}{2024}
 
-\pub{X.\ Shen, Z.\ Song, Y.\ Zhou, B.\ Chen, \textbf{Y.\ Li}, Y.\ Gong, K.\ Zhang, H.\ Tan, J.\ Kuen}
-    {LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers}
-    {AAAI}{2025}
+\pub{\textbf{Y.\ Li}, H.\ Wang, Q.\ Jin, J.\ Hu, P.\ Chemerys, Y.\ Fu, Y.\ Wang, S.\ Tulyakov, J.\ Ren}
+    {SnapFusion: Text-to-Image Diffusion Model on Mobile Devices within Two Seconds}
+    {NeurIPS}{2023}
 
-\pub{Y.\ Wu, Z.\ Zhang, \textbf{Y.\ Li}, Y.\ Xu, A.\ Kag, Y.\ Sui, H.\ Coskun, K.\ Ma, A.\ Lebedev}
-    {SnapGen-V: Generating a Five-Second Video within Five Seconds on a Mobile Device}
-    {CVPR}{2025}
-
-\pub{J.\ Chen, D.\ Hu, X.\ Huang, H.\ Coskun, A.\ Sahni, A.\ Gupta, A.\ Goyal, D.\ Lahiri}
-    {SnapGen: Taming High-Resolution Text-to-Image Models for Mobile Devices with Efficient Architectures and Training}
-    {CVPR}{2025}
-
-\pub{I.\ Skorokhodov, S.\ Girish, B.\ Hu, W.\ Menapace, \textbf{Y.\ Li}, R.\ Abdal, S.\ Tulyakov}
-    {Improving the Diffusability of Autoencoders}
-    {arXiv preprint}{2025}
-
-\end{etaremune}
+\end{enumerate}
 
 \subsection*{Hardware-Aware Optimization \& Quantization}
 
-\begin{etaremune}[start=6]
+\begin{enumerate}[resume]
 
-\pub{S.E.\ Chang, \textbf{Y.\ Li}, M.\ Sun, R.\ Shi, H.K.H.\ So, X.\ Qian, Y.\ Wang, X.\ Lin}
-    {Mix and Match: A Novel FPGA-Centric Deep Neural Network Quantization Framework}
-    {HPCA}{2021}
-
-\pub{M.\ Sun, Z.\ Li, A.\ Lu, \textbf{Y.\ Li}, S.E.\ Chang, X.\ Ma, X.\ Lin, Z.\ Fang}
-    {FILM-QNN: Efficient FPGA Acceleration of Deep Neural Networks with Intra-Layer, Mixed-Precision Quantization}
-    {FPGA}{2022}
+\pub{G.\ Yang, Y.\ Xie, Z.J.\ Xue, S.E.\ Chang, \textbf{Y.\ Li}, P.\ Dong, J.\ Lei, W.\ Xie, Y.\ Wang}
+    {SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs}
+    {FPL}{2024}
 
 \pub{Z.\ Li, M.\ Sun, A.\ Lu, H.\ Ma, G.\ Yuan, Y.\ Xie, H.\ Tang, \textbf{Y.\ Li}, M.\ Leeser, Z.\ Wang}
     {Auto-ViT-Acc: An FPGA-Aware Automatic Acceleration Framework for Vision Transformer with Mixed-Scheme Quantization}
     {FPL}{2022}
+
+\pub{M.\ Sun, Z.\ Li, A.\ Lu, \textbf{Y.\ Li}, S.E.\ Chang, X.\ Ma, X.\ Lin, Z.\ Fang}
+    {FILM-QNN: Efficient FPGA Acceleration of Deep Neural Networks with Intra-Layer, Mixed-Precision Quantization}
+    {FPGA}{2022}
 
 \pub{Z.\ Li, G.\ Yuan, W.\ Niu, P.\ Zhao, \textbf{Y.\ Li}, Y.\ Cai, X.\ Shen, Z.\ Zhan, Z.\ Kong, Q.\ Jin}
     {NPAS: A Compiler-Aware Framework of Unified Network Pruning and Architecture Search for Beyond Real-Time Mobile Acceleration}
@@ -227,11 +219,11 @@ Dissertation: \textit{Accelerating Large Scale Generative AI: A Comprehensive St
     {RMSMP: A Novel Deep Neural Network Quantization Framework with Row-Wise Mixed Schemes and Multiple Precisions}
     {ICCV}{2021}
 
-\pub{G.\ Yang, Y.\ Xie, Z.J.\ Xue, S.E.\ Chang, \textbf{Y.\ Li}, P.\ Dong, J.\ Lei, W.\ Xie, Y.\ Wang}
-    {SDA: Low-Bit Stable Diffusion Acceleration on Edge FPGAs}
-    {FPL}{2024}
+\pub{S.E.\ Chang, \textbf{Y.\ Li}, M.\ Sun, R.\ Shi, H.K.H.\ So, X.\ Qian, Y.\ Wang, X.\ Lin}
+    {Mix and Match: A Novel FPGA-Centric Deep Neural Network Quantization Framework}
+    {HPCA}{2021}
 
-\end{etaremune}
+\end{enumerate}
 
 % ---------- Patents ----------
 \section{Patents}
@@ -246,33 +238,25 @@ Dissertation: \textit{Accelerating Large Scale Generative AI: A Comprehensive St
     \item \textit{Layer Freezing \& Data Sieving for Sparse Training}. US Patent App.\ 17/893,241, 2024.
 \end{itemize}
 
-% ---------- Honors & Awards ----------
-\section{Honors \& Awards}
-
-% Add awards, fellowships, and honors as needed:
-% \begin{itemize}
-%     \item Award Name, Organization, Year
-% \end{itemize}
-\textit{To be updated.}
-
 % ---------- Professional Service ----------
 \section{Professional Service}
 
-\textbf{Conference Reviewer:} NeurIPS, CVPR, ICCV, ECCV, ICML, AAAI, ICLR
+\noindent\textbf{Conference Reviewer:} NeurIPS 2023, ICCV 2023, ECCV 2022, CVPR 2023, \ldots \\
+\textbf{Journal Reviewer:} IEEE TCAD, IEEE TCAS, \ldots
+
+\noindent\textbf{Teaching Assistant:} \textit{EECE 7398: Advances in Deep Learning}, Northeastern University, Boston, MA (Fall 2021). Instructor: Prof.\ Yanzhi Wang.
+
+\noindent\textbf{Guest Lecture:} \textit{Real-Time AI and High-Performance Machine Learning}, North Carolina State University (Fall 2022). Instructor: Prof.\ Xipeng Shen.
 
 % ---------- Skills ----------
 \section{Technical Skills}
 
 \begin{itemize}
+    \item \textbf{Scientific:} Linear Algebra, Statistics, Supervised/Unsupervised Machine Learning, Convolutional Neural Networks, Transformers, Diffusion Models
     \item \textbf{Languages \& Frameworks:} Python, PyTorch, TensorFlow, C/C++, CUDA
     \item \textbf{Tools:} Git, Docker, \LaTeX, Linux
-    \item \textbf{Specialties:} Model compression, neural architecture search, mobile deployment, FPGA acceleration
+    \item \textbf{Specialties:} Model compression, neural architecture search, mobile/edge deployment, FPGA acceleration
 \end{itemize}
-
-% ---------- References ----------
-\section{References}
-
-Available upon request.
 
 \vfill
 
